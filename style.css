@@ -28,15 +28,19 @@
    transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
 }
 #Entry{
+  
   position: absolute;
   top: -2px;
-  width: 40px;
+  width: 17px;
 align-items: center;
   background-color: #f7f7f7;
-  left: 350px;
+  left: 300px;
   color: black;
   font-weight: bolder;
   transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+#Entry:hover{
+  width: 90px;
 }
 
 #search{
@@ -173,6 +177,8 @@ body{
   background-image: url(./img/960x0.jpg);
   background-size: cover;
   scroll-behavior: smooth;
+  
+
 
 
 }
@@ -276,6 +282,8 @@ margin-top: 70px;
 }
 select{
   text-transform: capitalize;
+  font-family: 'Times New Roman', Times, serif;
+  
 
  
 }
@@ -337,7 +345,6 @@ transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
 option{
   background-color: rgb(5, 5, 60);
   border: none;
-  font-family: 'Times New Roman', Times, serif;
   color: #fff;
   text-align: left;
 }
@@ -403,6 +410,7 @@ Input[type=search]{
 .input {
   text-align: center;
   padding: 1rem 1.2rem;
+
   margin: 1rem;
   border-radius: 6px;
   display: block;
