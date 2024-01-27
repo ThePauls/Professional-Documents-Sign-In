@@ -50,6 +50,7 @@ background-size: cover;
 
 }
 
+
 #search:hover{
 width: 25%;
 position: absolute;
@@ -338,6 +339,7 @@ option{
   border: none;
   font-family: 'Times New Roman', Times, serif;
   color: #fff;
+  text-align: left;
 }
 .input.submit:hover{
   color: #dcdada;

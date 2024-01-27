@@ -2,7 +2,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbzbEZSEARSZNsV6mIihKO
 const form = document.forms['submit-to-google-sheet'];
 
 const passwordRedirectMap = {
-    'Montana': './MR ODUOR PFD/Class8.html',
+    'oduor': './MR ODUOR PFD/Class8.html',
     'pass2': './redirect2.html',
     'password3': './redirect3.html',
     // Add more mappings as needed
@@ -13,18 +13,18 @@ form.addEventListener('submit', async (e) => {
 
     // Prompt for password
     const { value: password } = await Swal.fire({
-        title: 'Enter Password',
+        title: 'Final step <br>Enter Security Code',
         input: 'password',
         showCancelButton: true,
         inputValidator: (value) => {
             if (!value) {
-                return 'Password is required!';
+                return '⚠️Security Code is required!⚠️';
             } else {
                 // Check if the entered password is in the passwordRedirectMap
                 if (!passwordRedirectMap.hasOwnProperty(value)) {
                     Swal.fire({
-                        title: 'Incorrect Password',
-                        text: 'Please enter a valid password.',
+                        title: 'Incorrect Security Code',
+                        text: '⚠️Please enter a valid  Security Code for MR ODUOR.⚠️',
                         icon: 'warning',
                     });
                     return ''; // Reject the input
