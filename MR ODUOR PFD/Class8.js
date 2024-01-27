@@ -34,8 +34,8 @@ const learners = {
     { 
       imageUrl: "",
       LearninArea: "1. EDWARD BENARD ABEKA ", 
-      SchoolChoices: "https://jamilo-school.github.io/Sign-in-to-landing-page/",
-      LearnerSelections: "https://jamilo-school.github.io/Sign-in-to-landing-page/", 
+      SchoolChoices: "https://1drv.ms/f/s!ApO7CeXy3fBY9gKcjHWX6jPP428P?e=wY8rvC",
+      LearnerSelections: "https://1drv.ms/f/s!ApO7CeXy3fBY9gKcjHWX6jPP428P?e=wY8rvC", 
       LeavingCertificate: "./Pdfs/leaving/Abeka's leaving Cert.pdf", 
       OnlineResultSlip: "./Pdfs/Slip/Abeka's Slip.pdf", 
       Placement:"./Pdfs/Placements 2023.pdf", 
