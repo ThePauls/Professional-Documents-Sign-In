@@ -2,7 +2,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbzbEZSEARSZNsV6mIihKO
 const form = document.forms['submit-to-google-sheet'];
 
 const passwordRedirectMap = {
-    'pass': './redirect1.html',
+    'Montana': './MR ODUOR PFD/Class8.html',
     'pass2': './redirect2.html',
     'password3': './redirect3.html',
     // Add more mappings as needed
