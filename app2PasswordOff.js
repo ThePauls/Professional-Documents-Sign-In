@@ -27,7 +27,7 @@ form.addEventListener('submit', async (e) => {
                 setTimeout(() => {
                     Swal.close();
                     // Replace the following line with the desired redirection logic
-                    // window.location.href = passwordRedirectMap[password];
+                    window.location.href = './MR ODUOR PFD/Class8.html';
                 }, 2000);
             } else {
                 Swal.fire({
