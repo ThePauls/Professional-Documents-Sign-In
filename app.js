@@ -1,8 +1,8 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzg7oOjj0KAQzGqgHFO-wKjjOQ6vjLokIxeqHBM0_FSoay3ab3PMPdDJxE2cgtefyQp/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzbEZSEARSZNsV6mIihKO5t6Ld9Jo9DTpEqigFWQbms_HptG4pVKrzRk8w48pmV5s4s3g/exec';
 const form = document.forms['submit-to-google-sheet'];
 
 const passwordRedirectMap = {
-    'admin': 'https://jamilo-school.github.io/landing-page/',
+    'pass': './redirect1.html',
     'pass2': './redirect2.html',
     'password3': './redirect3.html',
     // Add more mappings as needed
@@ -13,7 +13,7 @@ form.addEventListener('submit', async (e) => {
 
     // Prompt for password
     const { value: password } = await Swal.fire({
-        title: 'Digital Activation License Key Required',
+        title: 'Enter Password',
         input: 'password',
         showCancelButton: true,
         inputValidator: (value) => {
@@ -23,8 +23,8 @@ form.addEventListener('submit', async (e) => {
                 // Check if the entered password is in the passwordRedirectMap
                 if (!passwordRedirectMap.hasOwnProperty(value)) {
                     Swal.fire({
-                        title: 'Incorrect Activation License Key',
-                        text: 'Please enter a valid key or contact.',
+                        title: 'Incorrect Password',
+                        text: 'Please enter a valid password.',
                         icon: 'warning',
                     });
                     return ''; // Reject the input
@@ -35,7 +35,7 @@ form.addEventListener('submit', async (e) => {
 
     if (password) {
         Swal.fire({
-            title: 'Processing...',
+            title: 'Submitting...',
             text: 'Please wait',
             icon: 'info',
             showConfirmButton: false,
@@ -47,8 +47,8 @@ form.addEventListener('submit', async (e) => {
                 Swal.close();
                 if (response.status === 200) {
                     Swal.fire({
-                        title: 'Access Granted!',
-                        text: 'welcome!',
+                        title: 'Success!',
+                        text: 'Submission Successful!',
                         icon: 'success',
                     });
                     form.reset();

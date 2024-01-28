@@ -1,8 +1,8 @@
 // Define default data
 const defaultData = [
   {
-    Entry:"👁️8887",
-    StudentFullName: "MR ODUOR",
+    Entry:"👁️01",
+    StudentFullName: "Abeka",
     AdmissionNo: "23/001",
     IndexNo:"39741064001",
     AssessmentNumber: "Not a CBC Student",
@@ -22,28 +22,23 @@ const defaultData = [
     FileUrl4: "./img/StsPic/abeka.jpg",
    
   },
-   { Entry:"👁️000",
-    StudentFullName: "lolo",
-    AdmissionNo: "23/001",
-    IndexNo:"39741064001",
-    AssessmentNumber: "Not a CBC Student",
-    Gender: "Male",
-    AdmissionClass: "Class One",
-    ClassOf:"2023",
-    UPI: "A00090090",
-    PhoneNumber: "254909000999",
-    OfficialEmail: "Allanohn@example.com",
-    ClassTeacher: "🧑‍⚕️ Mr Oduor Geofrey Onyango",
-    ParentGuardianName: "ADARA MADoe",
-    ParentGuardianPhoneNumber: "6th-july-1998",
-    Siblings:"jane",
-    FileUrl1: "./Pdf/slip 2023/Clement's leaving Cert.pdf",
-    FileUrl2: "Result slip",
-    FileUrl3: "All collected",
-    FileUrl4: "./img/StsPic/abeka.jpg",
-   
+  {
+    StudentFullName: "Abondi Obadha",
+    AdmissionNo: "kssko",
+    Gender: "Female",
+    AdmissionClass: "ppppp",
+    AssessmentNumber: "B000156",
+    UPI: "B00098",
+    PhoneNumber: "0922",
+    Siblings: "0922",
+    OfficialEmail: "shwhn@example.com",
+    ClassTeacher: "Mr Allan Tom Onyango",
+    ParentGuardianName: "dmsk Doe",
+    ParentGuardianPhoneNumber: "4-yyy-yyyy",
+    FileUrl1: "URL_to_PDF_1_for_eje_Apondi_Obadha",
+    FileUrl2: "URL_to_PDF_2_for_eje_Apondi_Obadha",
+    FileUrl4: "./img/StsPic/lex.jpg",
   },
- 
   // Add more default data objects as needed
 ];
 
