@@ -47,3 +47,21 @@ form.addEventListener('submit', async (e) => {
             });
         });
 });
+
+//Sentence case tranform
+document.addEventListener('DOMContentLoaded', function () {
+    var inputs = document.querySelectorAll('input[type="text"]');
+
+    inputs.forEach(function (input) {
+      input.addEventListener('input', function () {
+        var currentValue = input.value;
+        input.value = sentenceCase(currentValue);
+      });
+    });
+
+    function sentenceCase(str) {
+      return str.replace(/\b\w/g, function (match) {
+        return match.toUpperCase();
+      });
+    }
+  });

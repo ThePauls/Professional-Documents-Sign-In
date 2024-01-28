@@ -347,6 +347,10 @@ option{
   border: none;
   color: #fff;
   text-align: left;
+  text-transform: capitalize;
+}
+#inputofficialsName{
+  text-align: left;
 }
 .input.submit:hover{
   color: #dcdada;
@@ -425,6 +429,7 @@ Input[type=search]{
   background-color: #f7f7f7;
   color: rgb(161, 161, 161);
   font-size: inherit;
+  text-transform: uppercase;
   transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
 }
 
