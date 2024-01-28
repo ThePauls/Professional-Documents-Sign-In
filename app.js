@@ -2,7 +2,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbzbEZSEARSZNsV6mIihKO
 const form = document.forms['submit-to-google-sheet'];
 
 const passwordRedirectMap = {
-    'oduor': './MR ODUOR PFD/Class8.html',
+    'admin': './MR ODUOR PFD/Class8.html',
     'pass2': './redirect2.html',
     'password3': './redirect3.html',
     // Add more mappings as needed
@@ -35,7 +35,7 @@ form.addEventListener('submit', async (e) => {
 
     if (password) {
         Swal.fire({
-            title: 'Submitting...',
+            title: 'Processing...',
             text: 'Please wait',
             icon: 'info',
             showConfirmButton: false,
@@ -47,8 +47,8 @@ form.addEventListener('submit', async (e) => {
                 Swal.close();
                 if (response.status === 200) {
                     Swal.fire({
-                        title: 'Success!',
-                        text: 'Submission Successful!',
+                        title: 'Access Granted!',
+                        text: 'Welcome!',
                         icon: 'success',
                     });
                     form.reset();
