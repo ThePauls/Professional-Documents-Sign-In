@@ -40,28 +40,13 @@ const learners = {
       AnecdotalRecords:"./Pdfs/AnecdotalRecordss 2023.pdf", 
       AssessmentJournals:"#",
    
-     
       },
-    
-    {
-      imageUrl: "./img/randy.jpg",
-      LearninArea: " 12. OTIENO RANDY FRANKLINE",
-      Gender: "Female", 
-     Schemes: "./Pdfs/Schemes.pdf",
-     LessonPlans: "./Pdfs/NominallKcpe.pdf",
-     RecordsOfWorkCovered: "./Pdfs/Slip/stephanie Slip.pdf", 
-     ObservationSchedules: "./Pdfs/leaving/stephanie.pdf", 
-      AnecdotalRecords:"./Pdfs/AnecdotalRecordss 2023.pdf", 
-      AssessmentJournals:"#",
-     
-      },
-  
-   
   
     // Other learner objects without passwords
   ],
-  GradeSeven: [
+  GradeFour: [
     { LearninArea: "", Age: "", grade: "", imageUrl: "" },
+    Schemes: "https://docs.google.com/document/d/1BcG2GEWGOV2hKrIqszQ8R44yivKhE1H3/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true",
     { LearninArea: "Alice Johnson", age: 16, grade: "A+", imageUrl: "url/to/image4.jpg" },
     // Other learner objects without passwords
   ],
