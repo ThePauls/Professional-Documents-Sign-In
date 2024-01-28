@@ -1,8 +1,8 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzbEZSEARSZNsV6mIihKO5t6Ld9Jo9DTpEqigFWQbms_HptG4pVKrzRk8w48pmV5s4s3g/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzg7oOjj0KAQzGqgHFO-wKjjOQ6vjLokIxeqHBM0_FSoay3ab3PMPdDJxE2cgtefyQp/exec';
 const form = document.forms['submit-to-google-sheet'];
 
 const passwordRedirectMap = {
-    '1083': './MR ODUOR PFD/ProDo.html',
+    'admin': 'https://jamilo-school.github.io/landing-page/',
     'pass2': './redirect2.html',
     'password3': './redirect3.html',
     // Add more mappings as needed
@@ -13,18 +13,18 @@ form.addEventListener('submit', async (e) => {
 
     // Prompt for password
     const { value: password } = await Swal.fire({
-        title: 'Final step <br>Enter Security Code',
+        title: 'Digital Activation License Key Required',
         input: 'password',
         showCancelButton: true,
         inputValidator: (value) => {
             if (!value) {
-                return '⚠️Security Code is required!⚠️';
+                return 'Password is required!';
             } else {
                 // Check if the entered password is in the passwordRedirectMap
                 if (!passwordRedirectMap.hasOwnProperty(value)) {
                     Swal.fire({
-                        title: 'Incorrect Security Code',
-                        text: '⚠️Please enter a valid  Security Code for MR ODUOR.⚠️',
+                        title: 'Incorrect Activation License Key',
+                        text: 'Please enter a valid key or contact.',
                         icon: 'warning',
                     });
                     return ''; // Reject the input
@@ -48,7 +48,7 @@ form.addEventListener('submit', async (e) => {
                 if (response.status === 200) {
                     Swal.fire({
                         title: 'Access Granted!',
-                        text: 'Welcome!',
+                        text: 'welcome!',
                         icon: 'success',
                     });
                     form.reset();
@@ -75,23 +75,3 @@ form.addEventListener('submit', async (e) => {
             });
     }
 });
-
-
-
-//Sentence case tranform
-document.addEventListener('DOMContentLoaded', function () {
-    var inputs = document.querySelectorAll('input[type="text"]');
-
-    inputs.forEach(function (input) {
-      input.addEventListener('input', function () {
-        var currentValue = input.value;
-        input.value = sentenceCase(currentValue);
-      });
-    });
-
-    function sentenceCase(str) {
-      return str.replace(/\b\w/g, function (match) {
-        return match.toUpperCase();
-      });
-    }
-  });
