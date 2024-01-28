@@ -351,6 +351,8 @@ option{
 }
 #inputofficialsName{
   text-align: left;
+  text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif;
 }
 .input.submit:hover{
   color: #dcdada;
