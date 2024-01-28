@@ -27,20 +27,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const learners = {
   // ... (your learner data)
-  ClassEight2023: [
-    {LearninArea:"Not yet Selected ",   
-     imageUrl: "",
-    },
+  GradeThree: [
+  
     { 
       imageUrl: "",
-      LearninArea: "1. EDWARD BENARD ABEKA ", 
-      SchoolChoices: "https://1drv.ms/f/s!ApO7CeXy3fBY9gKcjHWX6jPP428P?e=wY8rvC",
-      LearnerSelections: "https://1drv.ms/f/s!ApO7CeXy3fBY9gKcjHWX6jPP428P?e=wY8rvC", 
-      LeavingCertificate: "./Pdfs/leaving/Abeka's leaving Cert.pdf", 
-      OnlineResultSlip: "./Pdfs/Slip/Abeka's Slip.pdf", 
-      Placement:"./Pdfs/Placements 2023.pdf", 
-      CallingLetter:"#",
-      password: "ass",
+      LearninArea: "Music ", 
+      TheYear:"2024",
+      Schemes: "https://docs.google.com/document/d/1BcG2GEWGOV2hKrIqszQ8R44yivKhE1H3/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true",
+      LessonPlans: "https://1drv.ms/f/s!ApO7CeXy3fBY9gKcjHWX6jPP428P?e=wY8rvC", 
+      RecordsOfWorkCovered: "./Pdfs/Slip/Abeka's Slip.pdf", 
+      ObservationSchedules: "./Pdfs/leaving/Abeka's leaving Cert.pdf", 
+      AnecdotalRecords:"./Pdfs/AnecdotalRecordss 2023.pdf", 
+      AssessmentJournals:"#",
+   
      
       },
     
@@ -48,12 +47,12 @@ const learners = {
       imageUrl: "./img/randy.jpg",
       LearninArea: " 12. OTIENO RANDY FRANKLINE",
       Gender: "Female", 
-     SchoolChoices: "./Pdfs/SCHOOLCHOICES.pdf",
-     LearnerSelections: "./Pdfs/NominallKcpe.pdf",
-      LeavingCertificate: "./Pdfs/leaving/stephanie.pdf", 
-      OnlineResultSlip: "./Pdfs/Slip/stephanie Slip.pdf", 
-      Placement:"./Pdfs/Placements 2023.pdf", 
-      CallingLetter:"#",
+     Schemes: "./Pdfs/Schemes.pdf",
+     LessonPlans: "./Pdfs/NominallKcpe.pdf",
+     RecordsOfWorkCovered: "./Pdfs/Slip/stephanie Slip.pdf", 
+     ObservationSchedules: "./Pdfs/leaving/stephanie.pdf", 
+      AnecdotalRecords:"./Pdfs/AnecdotalRecordss 2023.pdf", 
+      AssessmentJournals:"#",
      
       },
   
@@ -69,7 +68,7 @@ const learners = {
   // Other classes and learners
 };
 
-function promptForDownloadPassword(learner, fileKey = "SchoolChoices") {
+function promptForDownloadPassword(learner, fileKey = "Schemes") {
   handleDownload(learner, fileKey);
 }
 
@@ -135,12 +134,12 @@ function displayBiodata() {
   for (const [key, value] of Object.entries(selectedLearner)) {
     if (
       key !== "imageUrl" &&
-      key !== "SchoolChoices" &&
-      key !== "LearnerSelections" &&
-      key !== "LeavingCertificate" &&
-      key !== "OnlineResultSlip" &&
-      key !== "Placement" &&
-      key !== "CallingLetter" &&
+      key !== "Schemes" &&
+      key !== "LessonPlans" &&
+      key !== "ObservationSchedules" &&
+      key !== "RecordsOfWorkCovered" &&
+      key !== "AnecdotalRecords" &&
+      key !== "AssessmentJournals" &&
       key !== "password"
     ) {
       const p = document.createElement("p");
@@ -149,23 +148,23 @@ function displayBiodata() {
     }
   }
 
-  if (selectedLearner.SchoolChoices) {
-    createDownloadLink(biodataDiv, selectedLearner, "SchoolChoices", "🫂School Choices");
+  if (selectedLearner.Schemes) {
+    createDownloadLink(biodataDiv, selectedLearner, "Schemes", "Schemes Of Work");
   }
-  if (selectedLearner.LearnerSelections) {
-    createDownloadLink(biodataDiv, selectedLearner, "LearnerSelections", "🚶‍♀️Learner Selections");
+  if (selectedLearner.LessonPlans) {
+    createDownloadLink(biodataDiv, selectedLearner, "LessonPlans", "🚶‍♀️Lesson Plans");
   }
-  if (selectedLearner.LeavingCertificate) {
-    createDownloadLink(biodataDiv, selectedLearner, "LeavingCertificate", "🤼Leaving Certificate");
+  if (selectedLearner.ObservationSchedules) {
+    createDownloadLink(biodataDiv, selectedLearner, "ObservationSchedules", "🤼Observation Schedules");
   }
-  if (selectedLearner.OnlineResultSlip) {
-    createDownloadLink(biodataDiv, selectedLearner, "OnlineResultSlip", "👨‍⚕️Online Result Slip");
+  if (selectedLearner.RecordsOfWorkCovered) {
+    createDownloadLink(biodataDiv, selectedLearner, "RecordsOfWorkCovered", "👨‍⚕️Records Of Work Covered");
   }
-  if (selectedLearner.Placement) {
-    createDownloadLink(biodataDiv, selectedLearner, "Placement", "🔍Placements");
+  if (selectedLearner.AnecdotalRecords) {
+    createDownloadLink(biodataDiv, selectedLearner, "AnecdotalRecords", "🔍Anecdotal Records");
   }
-  if (selectedLearner.CallingLetter) {
-    createDownloadLink(biodataDiv, selectedLearner, "CallingLetter", "📩Calling Letter", true);
+  if (selectedLearner.AssessmentJournals) {
+    createDownloadLink(biodataDiv, selectedLearner, "AssessmentJournals", "Assessment Journals", true);
   }
 }
 
