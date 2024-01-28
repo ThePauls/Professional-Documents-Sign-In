@@ -28,10 +28,10 @@ document.addEventListener('DOMContentLoaded', function () {
 const learners = {
   // ... (your learner data)
   GradeThree: [
-  { LearninArea: "Select " },
+  { LearningArea: "Select " },
     { 
       imageUrl: "",
-      LearninArea: "Music ", 
+      LearningArea: "Music ", 
       TheYear:"2024",
       Schemes: "https://docs.google.com/document/d/1BcG2GEWGOV2hKrIqszQ8R44yivKhE1H3/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true",
       LessonPlans: "https://docs.google.com/document/d/1Di1V9dnRg_aDBsgMaKB2D1EMb2RLGWcY/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true", 
@@ -43,7 +43,7 @@ const learners = {
       },
     { 
       imageUrl: "",
-      LearninArea: "Art and Craft", 
+      LearningArea: "Art and Craft", 
       TheYear:"2024",
       Schemes: "https://docs.google.com/document/d/1BUmvWeNQQwp7QxHwibIQO3NnV40iZYMt/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true",
       LessonPlans: "https://docs.google.com/document/d/1Db6A9Z8vvPpwAiu-5wE-Gu8SDZ4LzWpq/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true", 
@@ -57,11 +57,34 @@ const learners = {
     // Other learner objects without passwords
   ],
   GradeFour: [
-    { LearninArea: "", Age: "", grade: "", imageUrl: "" },
-    {Schemes: "https://docs.google.com/document/d/1BcG2GEWGOV2hKrIqszQ8R44yivKhE1H3/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true"},
-    { LearninArea: "Alice Johnson", age: 16, grade: "A+", imageUrl: "url/to/image4.jpg" },
+    { LearningArea: "Agriculture",
+    TheYear:"2024",
+    Schemes: "https://docs.google.com/document/d/1D99cjwtHAumurjFdBWPSjsYDNhZi8kM4/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true",
+    LessonPlans: "https://docs.google.com/document/d/1DUti1LFUlex1VruXV4JlpFOxXQkFanuO/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true", 
+    RecordsOfWorkCovered: "https://docs.google.com/document/d/1BlrXny1w6EJmf8Gzmn00mfvqXlAKSEHa/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true", 
+    ObservationSchedules: "#", 
+    AnecdotalRecords:"#", 
+    AssessmentJournals:"#"
+    
+    
+  },
+  { LearningArea: "English",
+      TheYear:"2024",
+      Schemes: "https://docs.google.com/document/d/1BS2bynm60fnlGXHuVmCQ921hwKmm5GvI/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true",
+      LessonPlans: "https://docs.google.com/document/d/1DST4Tg9hHXG_1daS9Q_iCocHoUNOnI1O/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true", 
+      RecordsOfWorkCovered: "https://docs.google.com/document/d/1CyQaifx7NTUJijrw6EZNuc7NI3o0MC4M/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true", 
+      ObservationSchedules: "#", 
+      AnecdotalRecords:"#", 
+      AssessmentJournals:"#"
+  
+  
+  },
+   
     // Other learner objects without passwords
   ],
+
+
+
   // Other classes and learners
 };
 
@@ -97,8 +120,8 @@ function handleDownload(learner, fileKey) {
 // ... (rest of the code)
 
 
-function countLearnersInClass(classLearninArea) {
-  return learners[classLearninArea].length - 1;
+function countLearnersInClass(classLearningArea) {
+  return learners[classLearningArea].length - 1;
 }
 
 function displayLearners() {
@@ -109,7 +132,7 @@ function displayLearners() {
   learners[selectedClass].forEach((learner, index) => {
     const option = document.createElement("option");
     option.value = index;
-    option.textContent = learner.LearninArea;
+    option.textContent = learner.LearningArea;
     learnerSelect.appendChild(option);
   });
 
