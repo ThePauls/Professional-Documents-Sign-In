@@ -28,16 +28,28 @@ document.addEventListener('DOMContentLoaded', function () {
 const learners = {
   // ... (your learner data)
   GradeThree: [
-  
+  { LearninArea: "Select " },
     { 
       imageUrl: "",
       LearninArea: "Music ", 
       TheYear:"2024",
       Schemes: "https://docs.google.com/document/d/1BcG2GEWGOV2hKrIqszQ8R44yivKhE1H3/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true",
-      LessonPlans: "https://1drv.ms/f/s!ApO7CeXy3fBY9gKcjHWX6jPP428P?e=wY8rvC", 
-      RecordsOfWorkCovered: "./Pdfs/Slip/Abeka's Slip.pdf", 
-      ObservationSchedules: "./Pdfs/leaving/Abeka's leaving Cert.pdf", 
-      AnecdotalRecords:"./Pdfs/AnecdotalRecordss 2023.pdf", 
+      LessonPlans: "https://docs.google.com/document/d/1Di1V9dnRg_aDBsgMaKB2D1EMb2RLGWcY/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true", 
+      RecordsOfWorkCovered: "https://docs.google.com/document/d/1CpGt3E9a3ydFvdWsIihCt_Ztb1EokblL/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true", 
+      ObservationSchedules: "#", 
+      AnecdotalRecords:"#", 
+      AssessmentJournals:"#",
+   
+      },
+    { 
+      imageUrl: "",
+      LearninArea: "Art and Craft", 
+      TheYear:"2024",
+      Schemes: "https://docs.google.com/document/d/1BUmvWeNQQwp7QxHwibIQO3NnV40iZYMt/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true",
+      LessonPlans: "https://docs.google.com/document/d/1Db6A9Z8vvPpwAiu-5wE-Gu8SDZ4LzWpq/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true", 
+      RecordsOfWorkCovered: "https://docs.google.com/document/d/1COuK_nGyfy_kmXR3NDs5vzxiEbDVGvAH/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true", 
+      ObservationSchedules: "#", 
+      AnecdotalRecords:"#", 
       AssessmentJournals:"#",
    
       },
@@ -46,7 +58,7 @@ const learners = {
   ],
   GradeFour: [
     { LearninArea: "", Age: "", grade: "", imageUrl: "" },
-    Schemes: "https://docs.google.com/document/d/1BcG2GEWGOV2hKrIqszQ8R44yivKhE1H3/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true",
+    {Schemes: "https://docs.google.com/document/d/1BcG2GEWGOV2hKrIqszQ8R44yivKhE1H3/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true"},
     { LearninArea: "Alice Johnson", age: 16, grade: "A+", imageUrl: "url/to/image4.jpg" },
     // Other learner objects without passwords
   ],
@@ -103,7 +115,7 @@ function displayLearners() {
 
   const numberOfLearners = countLearnersInClass(selectedClass);
   const countDisplay = document.getElementById("learnerCount");
-  countDisplay.textContent = `🔍Total Number of Learning areas: ${numberOfLearners}`;
+  countDisplay.textContent = `🔍Total Number of Learning areas Handled: ${numberOfLearners}`;
 
   displayBiodata();
 }
