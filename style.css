@@ -429,7 +429,6 @@ Input[type=search]{
   background-color: #f7f7f7;
   color: rgb(161, 161, 161);
   font-size: inherit;
-  text-transform: uppercase;
   transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
 }
 
