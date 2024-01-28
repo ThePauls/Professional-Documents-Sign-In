@@ -199,6 +199,9 @@ div#swal2-html-container.swal2-html-container {
   color: #d5cccc;
   
 }
+.swal2-input{
+  color: lavender;
+}
 
 div:where(.swal2-container) div:where(.swal2-popup) {
   display: none;
