@@ -246,6 +246,7 @@ form {
   z-index: 10;
   overflow: hidden;
   position: relative;
+  
 
 }
 #biodata{
@@ -1000,7 +1001,7 @@ width: 60px;
     padding: 0.45rem 1.2rem;
   }
   h2#biodata{
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 
