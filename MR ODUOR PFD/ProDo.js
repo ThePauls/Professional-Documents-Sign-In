@@ -57,7 +57,10 @@ const learners = {
     // Other learner objects without passwords
   ],
   GradeFour: [
-    { LearningArea: "Agriculture",
+    { LearningArea: "Select " },
+
+    { 
+      LearningArea: "Agriculture",
     TheYear:"2024",
     Schemes: "https://docs.google.com/document/d/1D99cjwtHAumurjFdBWPSjsYDNhZi8kM4/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true",
     LessonPlans: "https://docs.google.com/document/d/1DUti1LFUlex1VruXV4JlpFOxXQkFanuO/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true", 
@@ -81,7 +84,10 @@ const learners = {
     // Other learner objects without passwords
   ],
   GradeFive: [
-    { LearningArea: "Mathematics",
+    { LearningArea: "Select " },
+
+    {
+       LearningArea: "Mathematics",
     TheYear:"2024",
     Schemes: "https://docs.google.com/document/d/1Bl75cTEbngbzhYkmaFcf1a-JOJIadq2z/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true",
     LessonPlans: "https://docs.google.com/document/d/1DcYB6NrPgsjo5oJviRjB1VB55dD0n6B1/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true", 
@@ -103,7 +109,10 @@ const learners = {
   },
 ],
   GradeSix: [
-    { LearningArea: "Agriculture",
+    { LearningArea: "Select " },
+
+    { 
+      LearningArea: "Agriculture",
     TheYear:"2024",
     Schemes: "https://docs.google.com/document/d/1BcNO1QzV_-oKUxEmBM7X6wjjj-y0w4Fh/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true",
     LessonPlans: "https://docs.google.com/document/d/1DlXAyfzw3lsjcLOlyc-fnY_5ImZGs9As/edit?usp=sharing&ouid=110287645281482421505&rtpof=true&sd=true", 
@@ -182,7 +191,7 @@ function displayLearners() {
 
   const numberOfLearners = countLearnersInClass(selectedClass);
   const countDisplay = document.getElementById("learnerCount");
-  countDisplay.textContent = `🔍Total Number of Learning areas Handled: ${numberOfLearners}`;
+  countDisplay.textContent = `🔍Total No of Learning areas Handled: ${numberOfLearners}`;
 
   displayBiodata();
 }

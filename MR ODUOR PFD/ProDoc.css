@@ -968,6 +968,7 @@ width: 60px;
   .contact-info {
     padding: 1.7rem 1.6rem;
     padding-bottom: 0px;
+    width: 90%;
   
   }
 
@@ -997,6 +998,9 @@ width: 60px;
 
   .btn {
     padding: 0.45rem 1.2rem;
+  }
+  h2#biodata{
+    font-size: 19px;
   }
 }
 
