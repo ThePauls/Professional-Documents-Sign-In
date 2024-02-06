@@ -13,7 +13,7 @@ form.addEventListener('submit', async (e) => {
 
     // Prompt for password
     const { value: password } = await Swal.fire({
-        title: 'Tsc No',
+        title: 'Teacher Tsc No',
         input: 'password',
         showCancelButton: true,
         inputValidator: (value) => {
