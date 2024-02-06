@@ -629,20 +629,15 @@ background-clip: text;
  
   }
   #search{
-    width: 25%;
+    width: 100%;
     position: absolute;
-    top: 70px;
+    top: 50px;
     right: -10px;
     overflow: hidden;
     background-size: cover;
     
     }
-    #search:hover{
-      width: 99%;
-      position: absolute;
-      top: 70px;
-      right: -10px;
-      }
+    
   
  
 .ip, .logo{
@@ -675,7 +670,8 @@ background-clip: text;
      transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
   }
   .hero{
-    padding-top: 100px;
+    padding-top: 80px;
+  
   
   }
   .formsectionB{
